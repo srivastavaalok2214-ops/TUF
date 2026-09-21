@@ -1534,13 +1534,14 @@
     @media (max-width: 768px) {
       html, body { overflow-x: hidden; }
 
-      /* Snap sections just need enough vertical space so the next one doesn't peek */
-      .section-two,
-      .use-cases-wrapper,
-      .rv-section {
+      /* Section 2 fills viewport so section 3 doesn't peek */
+      .section-two {
+        min-height: 100svh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 32px;
       }
 
       /* NAVBAR */
