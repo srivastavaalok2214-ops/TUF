@@ -1535,6 +1535,22 @@
     @media (max-width: 768px) {
       html, body { overflow-x: hidden; }
 
+      /* Each snap section fills the viewport so the next one doesn't peek */
+      .hero-top,
+      .section-two,
+      .use-cases-wrapper,
+      .rv-section {
+        min-height: 100svh;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .hero-visual-wrapper {
+        min-height: 100svh;
+        min-height: 100vh;
+      }
+
       /* NAVBAR */
       .navbar {
         padding: 12px 16px;
