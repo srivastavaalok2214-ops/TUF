@@ -1517,22 +1517,23 @@
     /* ============================================================
        GLOBAL MOBILE RESPONSIVE (≤ 768px)
     ============================================================ */
+    /* Scroll snap — each major section gently snaps into view (mobile + desktop) */
+    html {
+      scroll-snap-type: y proximity;
+      scroll-padding-top: 0;
+      scroll-behavior: smooth;
+    }
+    .hero-top,
+    .hero-visual-wrapper,
+    .section-two,
+    .use-cases-wrapper,
+    .rv-section {
+      scroll-snap-align: start;
+      scroll-snap-stop: normal;
+    }
+
     @media (max-width: 768px) {
       html, body { overflow-x: hidden; }
-
-      /* Scroll snap — each major section snaps into view */
-      html {
-        scroll-snap-type: y proximity;
-        scroll-padding-top: 0;
-      }
-      .hero-top,
-      .hero-visual-wrapper,
-      .section-two,
-      .use-cases-wrapper,
-      .rv-section {
-        scroll-snap-align: start;
-        scroll-snap-stop: normal;
-      }
 
       /* NAVBAR */
       .navbar {
