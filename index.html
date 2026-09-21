@@ -944,7 +944,7 @@
 
     /* SECTION 2 & TYPING COMPONENT */
     .section-two {
-      padding: 180px 48px;
+      padding: 140px 48px;
       max-width: 1000px;
       margin: 0 auto;
       display: flex;
@@ -1136,7 +1136,7 @@
     /* SECTION 3 - USE CASES */
     .use-cases-wrapper {
       background: #FFFFFF;
-      padding: 60px 20px 100px;
+      padding: 40px 20px 60px;
       position: relative;
     }
     .use-cases-wrapper::before,
@@ -1524,7 +1524,6 @@
       scroll-behavior: smooth;
     }
     .hero-top,
-    .hero-visual-wrapper,
     .section-two,
     .use-cases-wrapper,
     .rv-section {
@@ -1535,20 +1534,13 @@
     @media (max-width: 768px) {
       html, body { overflow-x: hidden; }
 
-      /* Each snap section fills the viewport so the next one doesn't peek */
-      .hero-top,
+      /* Snap sections just need enough vertical space so the next one doesn't peek */
       .section-two,
       .use-cases-wrapper,
       .rv-section {
-        min-height: 100svh;
-        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-      }
-      .hero-visual-wrapper {
-        min-height: 100svh;
-        min-height: 100vh;
       }
 
       /* NAVBAR */
@@ -1597,10 +1589,10 @@
 
       /* HERO */
       .hero-top {
-        padding: 72px 20px 88px;
+        padding: 56px 20px 48px;
       }
-      .trusted-by { margin-bottom: 32px; }
-      .hero-visual-wrapper { margin-bottom: 32px; }
+      .trusted-by { margin-bottom: 0; }
+      .hero-visual-wrapper { margin-bottom: 0; }
       .hero-align-toggle {
         top: 12px;
         right: 12px;
@@ -1680,7 +1672,7 @@
 
       /* SECTION 2 */
       .section-two {
-        padding: 140px 20px 140px;
+        padding: 80px 20px;
       }
       .s2-content { max-width: 100%; }
       .s2-icon-pill { margin-bottom: 16px; }
@@ -1713,10 +1705,10 @@
       }
 
       /* FEATURES / USE-CASES */
-      .use-cases-wrapper { padding: 80px 12px 80px; }
+      .use-cases-wrapper { padding: 32px 12px 48px; }
       .use-cases-wrapper::before,
-      .use-cases-wrapper::after { height: 48px; }
-      .use-cases-section { padding: 64px 20px; margin: 24px 0; }
+      .use-cases-wrapper::after { height: 40px; }
+      .use-cases-section { padding: 40px 20px; margin: 12px 0; }
       .uc-header {
         flex-direction: column;
         align-items: flex-start;
@@ -2435,7 +2427,7 @@
   <style>
     .rv-section {
       background: #F7F7F7;
-      padding: 200px 0 160px;
+      padding: 140px 0 120px;
       font-family: 'Inter', sans-serif;
       color: #111111;
       display: flex;
@@ -2611,7 +2603,7 @@
 
     /* MOBILE REVIEWS — vertical stack, no marquee */
     @media (max-width: 768px) {
-      .rv-section { padding: 140px 16px 120px; }
+      .rv-section { padding: 72px 16px 80px; }
       .rv-shell { width: 100%; max-width: 100%; }
       .rv-title { font-size: 26px; top: -40px; left: 4px; }
       .rv-outer {
